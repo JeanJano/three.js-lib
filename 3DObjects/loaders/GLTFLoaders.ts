@@ -32,7 +32,8 @@ export class GLTFLoaders extends Object3D {
             this._gltfLoader.load(
                 this._modelName,
                 (gltf: GLTF) => {
-                    this.add(gltf.scene);
+                    const model = gltf.scene;
+                    this.add(model);
                     this.animations = gltf.animations;
                     resolve();
                 },

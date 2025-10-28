@@ -27,7 +27,7 @@ export class World {
         this._isFullScreen = height ? false : true;
         this._init_renderer();
         this._aspect = this._width / this._height;
-        this._camera = new PerspectiveCamera(75, this._aspect, 0.1, 10);
+        this._camera = new PerspectiveCamera(75, this._aspect, 0.1, 100);
         this._init_camera();
         this._isVisible = false;
         this._observer = null;
